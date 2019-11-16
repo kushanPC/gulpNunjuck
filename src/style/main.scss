@@ -1,3 +1,199 @@
 body {
-  background-color: #eaeaea;
+      font-family: 'Montserrat', sans-serif;
+      // background-image: linear-gradient(to right top, #323353, #2e2f4c, #292b45, #25273f, #212338);
+      background-color: #323353;
+      margin: 0;
+      padding: 0;
+      font-size:  0.87vw;
+
+}
+a {
+   text-decoration: none;
+   color: black;
+ }
+
+.d-flex{
+        display: flex;
+}
+.header {
+        display: flex;
+        margin-top: 3.23vw;
+        justify-content: space-between;
+        width:  76.09vw;
+        margin-left:  7.34vw;
+        align-items: center;
+  .logo {
+        width: 3.47vw;
+        height: 3.46vw;
+        background:  url(../img/logo@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+  }
+  .menu {
+
+        .menu_item{
+                   display: block;
+                   margin-left: 4.01vw;
+                a {
+                   font-size: 0.87vw;
+                   text-decoration: none;
+                   font-weight: normal;
+                   font-stretch: normal;
+                   font-style: normal;
+                   line-height: normal;
+                   letter-spacing: 0.2px;
+                   color: #eaf1f6;
+                   line-height: 2;
+        }
+        a:after {
+                background-color: #45afe3;
+                display: block;
+                border-radius: 4px;
+                content: "";
+                height: 6px;
+                width: 0%;
+                -webkit-transition: width .3s ease-in-out;
+                -moz--transition: width .3s ease-in-out;
+                transition: width .3s ease-in-out;
+                }
+                a:hover:after,
+                a:focus:after {
+                width: 100%;
+              }
+    }
+  }
+}
+.content {
+  width: 81.37vw;
+  margin: auto;
+  flex-direction: row;
+  .test_course{
+    flex-direction: column;
+    width: 34.81vw;
+    margin-top: 9.29vw;
+    .button{
+      outline: none;
+      display: inline-block;
+      background-color: #374366;
+      font-size: 0.70vw;
+      font-weight: 400;
+      color: #44a7d9;
+      width: 9.97vw;
+      height:  2.14vw;;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      line-height: 2.2vw;
+      text-align: center;
+      border-radius: 1vw;
+
+      span {
+        position: relative;
+        z-index: 5;
+      }
+      }
+      .button:before,
+      .button:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+      .button:before{
+        transform: translateX(-101%);
+        background: #384a7a;
+        transition: transform .3s cubic-bezier(.55,.055,.675,.19);
+      }
+      .button:after {
+        background: #313c57;
+        transform: translateX(101%);
+        transition: transform .3s cubic-bezier(.16,.73,.58,.62) .3s;
+      }
+      .button:hover:before,
+      .button:hover:after {transform: translateX(0);}
+
+      .button2 {
+      outline: none;
+      display: block;
+      width:   11.65vw;
+      height: 4.36vw;
+      color: white;
+      margin-top: 3.58vw;;
+      margin-bottom: 2.74vw;
+      margin-left:  0.89vw;
+      border-radius: 15vw;
+      text-transform: uppercase;
+      background-image: linear-gradient(to right, #ff692a 0%, #f70077 51%, #ff692a 100%);
+      background-size: 200% auto;
+      box-shadow: 0 0 20px rgba(0,0,0,.1);
+      transition: .5s;
+      font-size: 1.1vw;
+
+      text-align: center;
+      line-height: 4.2vw;
+    }
+    .button2:hover {background-position: right center;}
+
+    h1{
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      font-size: 3.74vw;
+      letter-spacing: 0.03vw;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.35;
+      margin-bottom: 0;
+      margin-left:  0.89vw;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 1vw;
+        color: #81839a;
+        margin-top: 1.21vw;
+        margin-bottom: 0;
+        margin-left:  0.89vw;
+        line-height: 2vw;
+    }
+    .video_courses {
+      font-weight: 300;
+      font-size:  0.75vw;
+      color:#a7a9bc;
+      margin-left:  2.76vw;
+    }
+    }
+
+  .images{
+
+    .img1{
+      background: url(../img/img.png)no-repeat center top;
+      width: 9.01vw;
+      height: 16.11vw;
+      left: 59.74%;
+      top: 24.31vw;
+    }
+    .img2{
+      background: url(../img/img2.png)no-repeat center top;
+      width: 9.01vw;
+      height: 16.11vw;
+      left: 69.58%;
+      top: 14.07vw;
+    }
+    .img3{
+      background: url(../img/img3.png)no-repeat center top;
+      width: 9.01vw;
+      height: 16.11vw;
+      left: 80%;
+      top: 26.89vw;
+    }
+    div[class^="img"] {
+      position: absolute;
+      z-index: -1;
+      background-size: contain;
+    }
+}
 }
